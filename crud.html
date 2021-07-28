@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="crud.css"/>
+</head>
+<body>
+    <h1 style="color: royalblue;"><center>Employee Record</center></h1>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault(); onFormSubmit()" autocomplete="off">
+                    <div>
+                        <label>Full Name</label><br>
+                        <input type="text" placeholder="Enter your Name" name="FullName" id="fullName"/> 
+                    </div>
+                    <div>
+                        <label>Emp Code</label><br>
+                        <input type="text" placeholder="Enter your Emp Code" name="Emp Code" id="empCode"/> 
+                    </div>
+                    <div>
+                        <label>Address</label><br>
+                        <input type="text" placeholder="Enter your Address" name="Address" id="address"/> 
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="submit"/>
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList"> 
+                    <thead>
+                        <tr>
+                            <th class="thEdit">Full Name</th>
+                            <th class="thEdit">Emp Code</th>
+                            <th class="thEdit">Address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="crud.js"></script>
+</body>
+</html>
